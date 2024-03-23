@@ -1,0 +1,385 @@
+    .header {
+        padding-top: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .header .menu {
+        width: 32px;
+        height: 24px;
+    }
+    
+    .header .logo a {
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .header .menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+    
+    .hero-section {
+        height: 100vh;
+        min-height: 700px;
+        width: 100%;
+        background-image: url("../images/hero.jpg.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        min-height: 700px;
+        background: rgba(0, 0, 0, 0.2);
+        top: 0;
+        left: 0;
+    }
+    
+    .hero-section .hero-content {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        height: 100vh;
+        min-height: 700px;
+    }
+    
+    .hero-section .hero-content h1 {
+        font-size: 9rem;
+    }
+    
+    .hero-section .hero-content p {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 200px;
+    }
+    
+    .hero-section .hero-content p a {
+        color: rgba(255, 255, 255, 0.5);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .hero-section .hero-content p a:hover {
+        color: rgba(255, 255, 255, 1);
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        transition: all 0.5s;
+    }
+    
+    .hero-section .button {
+        color: #fff;
+        display: inline-block;
+        padding: 15px 24px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+    
+    .hero-section .button:hover {
+        background: #fff;
+        color: #000;
+        transition: all 0.15s;
+    }
+    
+    .hero-section .scroll-bottom {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    
+    .hero-section .scroll-bottom * {
+        display: block;
+    }
+    
+    .hero-section .scroll-bottom i {
+        transform: rotate(90deg);
+    }
+    
+    .hero-section .scroll-bottom span {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    
+    .wellcome img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .wellcome .call-to-action {
+        gap: 10px;
+        width: fit-content;
+    }
+    
+    .wellcome .call-to-action .icon {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #e6e6e6;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        color: #65c0ba;
+        padding-left: 3px;
+        transition: all 0.3ms;
+    }
+    
+    .wellcome .call-to-action .text {
+        font-size: 1.7rem;
+        color: #65c0ba;
+        letter-spacing: 2px;
+        transition: all 0.3ms;
+    }
+    
+    .wellcome .call-to-action:hover .icon {
+        border-color: #000;
+        color: #000;
+    }
+    
+    .wellcome .call-to-action:hover .text {
+        color: #3f9a94;
+    }
+    
+    .experience .items img {
+        width: 70px;
+        height: auto;
+    }
+    
+    .slider::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        content: "";
+        left: 0;
+        top: 0;
+    }
+    
+    .slider .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4rem;
+        transition: all 0.3s;
+        color: #495057;
+        cursor: pointer;
+    }
+    
+    .slider .prev {
+        left: -50;
+    }
+    
+    .slider .next {
+        right: -50;
+    }
+    
+    .slider .arrow:hover {
+        color: #6c757d;
+    }
+    
+    .slider .pagination {
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+        width: 100%;
+    }
+    
+    .slider .pagination ul {
+        gap: 10px;
+    }
+    
+    .slider .pagination ul li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
+    
+    .slider .pagination ul li.active {
+        background-color: transparent;
+    }
+    
+    .blog::before {
+        position: absolute;
+        top: -350px;
+        left: -1%;
+        content: "";
+        transform: rotate(-4deg);
+        width: 120%;
+        background-color: #65c0ba;
+        padding: 250px 0;
+        z-index: -1;
+    }
+    
+    .blog .items ul li .content {
+        background-color: #fff;
+    }
+    
+    .blog .items ul li .content .bottom-content {
+        padding: 3rem;
+    }
+    
+    .blog .items ul li .content .bottom-content .date {
+        color: #ced4da;
+        letter-spacing: 3px;
+    }
+    
+    .blog .items ul li .content .bottom-content .title {
+        line-height: 1.4;
+        min-height: 75px;
+    }
+    
+    .blog .items ul li .content .bottom-content .description {
+        min-height: 165px;
+    }
+    
+    .testimonial .items ul li img {
+        width: 70px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .testimonial .items ul li .text {
+        color: #000;
+    }
+    
+    .testimonial .items ul li p {
+        min-height: 180px;
+    }
+    
+    .testimonial .items ul li .auther::before {
+        content: "—";
+        margin-right: 5px;
+    }
+    
+    .testimonial .items ul li .auther {
+        font-style: italic;
+        position: relative;
+        text-transform: capitalize;
+    }
+    
+    .destination .items ul li .bottom-content a {
+        color: #000;
+        transition: all 0.3s;
+    }
+    
+    .destination .items ul li .bottom-content a:hover {
+        color: #65c0ba;
+    }
+    
+    .destination .items ul li .bottom-content .title {
+        color: #000;
+        transition: all 0.3s;
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+    
+    .destination .items ul li .bottom-content .rating ul li i {
+        color: #65c0ba;
+        font-size: 1.2rem;
+    }
+    
+    .destination .items ul li .bottom-content .reviews {
+        color: #ccc;
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+    
+    .footer {
+        background-color: #1a1a1a;
+        padding: 60px 0 100px;
+    }
+    
+    .footer .title {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    
+    .footer ul li a {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.8rem;
+        display: block;
+        padding-bottom: 8px;
+        transition: all 0.3s;
+        font-weight: 200;
+    }
+    
+    .footer ul li a:hover {
+        color: #fff;
+    }
+    
+    .footer ul li .subtitle {
+        color: #fff;
+        font-style: italic;
+        font-size: 1.8rem;
+    }
+    
+    .footer p {
+        color: rgba(255, 255, 255, 0.5)
+    }
+    
+    .footer .newsletter form input {
+        background: transparent;
+        border: none;
+        outline: 0;
+        padding: 10px 20px 14px;
+        text-indent: 10px;
+        font-size: 1.5rem;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+    
+    .footer .newsletter form input:focus {
+        border-color: #fff;
+    }
+    
+    .footer .newsletter form input::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+    
+    .footer .newsletter form button {
+        position: absolute;
+        right: 20px;
+        bottom: 14px;
+        background: none;
+        outline: 0;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    
+    .footer .copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 70px;
+        padding-top: 60px;
+    }
+    
+    .footer .copyright a {
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s;
+    }
+    
+    .footer .copyright a:hover {
+        color: #fff;
+    }
+    
+    .footer .social ul {
+        gap: 20px;
+    }
