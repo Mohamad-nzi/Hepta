@@ -121,6 +121,10 @@
         background-image: url("../images/hero_5.jpg.webp");
     }
     
+    .hero-section.about {
+        background-image: url("../images/hero_2.jpg.webp");
+    }
+    
     .hero-section.page-inside-hotel,
     .hero-section .hero-content.page-inside-hotel,
     .hero-section.page-inside-hotel::before {
@@ -244,9 +248,13 @@
         color: #3f9a94;
     }
     
+    .family-room.mt-5.mb-5 {
+        margin-top: 110px;
+        margin-bottom: 120px;
+    }
+    
     .family-room .half-img-1 {
-        height: 100%;
-        min-height: 576px;
+        max-height: 100%;
         width: 100%;
         background-image: url("../images/hero.jpg.webp");
         background-size: cover;
@@ -255,8 +263,7 @@
     }
     
     .family-room .half-img-2 {
-        height: 100%;
-        min-height: 576px;
+        max-height: 100%;
         width: 100%;
         background-image: url("../images/wellcome.webp");
         background-size: cover;
@@ -390,6 +397,19 @@
         z-index: -1;
     }
     
+    .blog.team::before {
+        content: "";
+        position: absolute;
+        top: -350px;
+        left: 0;
+        content: "";
+        transform: rotate(0deg);
+        width: 100%;
+        background-color: #fff;
+        padding: 250px 0;
+        z-index: -1;
+    }
+    
     .blog .items ul li .content {
         background-color: #fff;
         transition: all 0.3s;
@@ -416,6 +436,15 @@
         line-height: 1.4;
         min-height: 75px;
         transition: all 0.3s;
+    }
+    
+    .blog.team .items ul li .content .bottom-content p {
+        color: #ced4da;
+    }
+    
+    .blog.team .items ul li .content .bottom-content .title {
+        min-height: 32px;
+        font-weight: 200;
     }
     
     .blog .items ul li .content .bottom-content .title:hover {
@@ -486,7 +515,7 @@
     
     .footer {
         background-color: #1a1a1a;
-        padding: 60px 0 100px;
+        padding: 110px 0 100px;
     }
     
     .footer .title {
