@@ -96,6 +96,11 @@
         font-weight: 200;
         padding: 5px 10px;
         position: relative;
+        transition: all 0.3ms;
+    }
+    
+    .header .nav-menu .full-height ul li h3 a:hover {
+        color: #65c0ba;
     }
     
     .header .nav-menu .full-height ul li h3 a.active {
@@ -110,6 +115,17 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+    
+    .hero-section.hotel {
+        background-image: url("../images/hero_5.jpg.webp");
+    }
+    
+    .hero-section.page-inside-hotel,
+    .hero-section .hero-content.page-inside-hotel,
+    .hero-section.page-inside-hotel::before {
+        height: 70vh;
+        min-height: 500px;
     }
     
     .hero-section::before {
@@ -133,6 +149,7 @@
     
     .hero-section .hero-content h1 {
         font-size: 9rem;
+        line-height: 125%;
     }
     
     .hero-section .hero-content p {
@@ -227,6 +244,67 @@
         color: #3f9a94;
     }
     
+    .family-room .half-img-1 {
+        height: 100%;
+        min-height: 576px;
+        width: 100%;
+        background-image: url("../images/hero.jpg.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .family-room .half-img-2 {
+        height: 100%;
+        min-height: 576px;
+        width: 100%;
+        background-image: url("../images/wellcome.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .family-room .col-nopading {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .family-room .half-text {
+        padding: 100px 7%;
+    }
+    
+    .family-room .half-text h2 {
+        font-size: 3.6rem;
+        font-weight: 200;
+    }
+    
+    .family-room .btn-learn-more {
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        border-radius: 4px;
+        border: solid 2px #65c0ba;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #1a1a1a;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        transition: all 0.3s;
+    }
+    
+    .family-room .btn-learn-more:hover {
+        border: solid 2px #3f9a94;
+        background-color: #65c0ba;
+        color: #fff;
+    }
+    
     .experience .items img {
         width: 70px;
         height: auto;
@@ -300,8 +378,29 @@
         z-index: -1;
     }
     
+    .blog.more-hotel::before {
+        position: absolute;
+        top: -350px;
+        left: 0;
+        content: "";
+        transform: rotate(0deg);
+        width: 100%;
+        background-color: #e9ecef;
+        padding: 250px 0;
+        z-index: -1;
+    }
+    
     .blog .items ul li .content {
         background-color: #fff;
+        transition: all 0.3s;
+    }
+    
+    .blog .items ul li .content:hover {
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .blog .items ul li .content .img-full:hover {
+        cursor: pointer;
     }
     
     .blog .items ul li .content .bottom-content {
@@ -316,6 +415,12 @@
     .blog .items ul li .content .bottom-content .title {
         line-height: 1.4;
         min-height: 75px;
+        transition: all 0.3s;
+    }
+    
+    .blog .items ul li .content .bottom-content .title:hover {
+        color: #65c0ba;
+        cursor: pointer;
     }
     
     .blog .items ul li .content .bottom-content .description {
@@ -346,6 +451,10 @@
         font-style: italic;
         position: relative;
         text-transform: capitalize;
+    }
+    
+    .destination .items ul li .img-full:hover {
+        cursor: pointer;
     }
     
     .destination .items ul li .bottom-content a {

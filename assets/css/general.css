@@ -34,7 +34,7 @@ h5 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 200;
     color: #6c757d;
 }
@@ -257,6 +257,10 @@ ol {
     border-top: 1px solid #e0e0e0;
 }
 
+.bg-dark-gray {
+    background-color: #e9ecef;
+}
+
 .bg-green {
     background-color: #65c0ba;
 }
@@ -281,9 +285,17 @@ ol {
 }
 
 .header-section .description {
-    font-size: 1.9rem;
+    font-size: 2rem;
 }
 
 .header-section.white .description {
     color: #fff;
+}
+
+.box-shadow-1 {
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow-2 {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
