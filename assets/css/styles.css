@@ -125,6 +125,10 @@
         background-image: url("../images/hero_2.jpg.webp");
     }
     
+    .hero-section.blog-news {
+        background-image: url("../images/hero_3.jpg.webp");
+    }
+    
     .hero-section.page-inside-hotel,
     .hero-section .hero-content.page-inside-hotel,
     .hero-section.page-inside-hotel::before {
@@ -153,7 +157,7 @@
     
     .hero-section .hero-content h1 {
         font-size: 9rem;
-        line-height: 125%;
+        line-height: 1.5;
     }
     
     .hero-section .hero-content p {
@@ -373,7 +377,92 @@
         background-color: transparent;
     }
     
-    .blog::before {
+    .news-section {
+        padding-top: 125px;
+        padding-bottom: 64px
+    }
+    
+    .news-section .search-side .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        font-size: 1.7rem;
+        color: #0069c7;
+    }
+    
+    .news-section .search-side .padding-sidebar {
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+    
+    .news-section .search-side .search-input {
+        display: block;
+        padding: 6px 12px 6px 40px;
+        border-radius: 0px;
+        border: 2px solid #dee2e6;
+        box-shadow: none;
+        height: 50px;
+        width: 100%;
+        font-size: 1.7rem;
+        font-family: inherit;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+    }
+    
+    .news-section .search-side .search-input:focus {
+        border-radius: 0px;
+        border-color: #343a40;
+        outline: none;
+    }
+    
+    .news-section .search-side .title-sidebar {
+        font-weight: 500;
+        color: #1a1a1a;
+    }
+    
+    .news-section .search-side ul li .left-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding-right: 12px;
+    }
+    
+    .news-section .search-side ul li .right-content p {
+        font-size: 1.4rem;
+    }
+    
+    .news-section .search-side ul li .right-content h3 {
+        font-size: 1.5rem;
+        color: #1a1a1a;
+        line-height: 1.5;
+        font-weight: 200;
+    }
+    
+    .news-section .search-side ul.col-12.not-padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .news-section .search-side ul li a {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .news-section .search-side ul li a .left-categories p {
+        font-size: 1.8rem;
+        color: #65c0ba;
+    }
+    
+    .news-section .search-side ul li a .right-number p {
+        font-size: 1.8rem;
+    }
+    
+    .news-section .search-side ul li .left-img .blog.before::before {
         position: absolute;
         top: -350px;
         left: -1%;
@@ -385,7 +474,7 @@
         z-index: -1;
     }
     
-    .blog.more-hotel::before {
+    .blog.before.more-hotel::before {
         position: absolute;
         top: -350px;
         left: 0;
@@ -393,19 +482,6 @@
         transform: rotate(0deg);
         width: 100%;
         background-color: #e9ecef;
-        padding: 250px 0;
-        z-index: -1;
-    }
-    
-    .blog.team::before {
-        content: "";
-        position: absolute;
-        top: -350px;
-        left: 0;
-        content: "";
-        transform: rotate(0deg);
-        width: 100%;
-        background-color: #fff;
         padding: 250px 0;
         z-index: -1;
     }
@@ -530,6 +606,7 @@
     .footer .title {
         color: #fff;
         font-size: 1.8rem;
+        font-weight: 200;
     }
     
     .footer ul li a {
