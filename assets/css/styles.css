@@ -513,6 +513,15 @@
         font-weight: 200;
     }
     
+    .gallery {
+        margin-bottom: 110px;
+    }
+    
+    .gallery .img-gallery {
+        max-width: 100%;
+        height: auto;
+    }
+    
     .footer {
         background-color: #1a1a1a;
         padding: 110px 0 100px;
