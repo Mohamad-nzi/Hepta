@@ -8,14 +8,36 @@
     .col-3 {
         flex-basis: 50%;
     }
-    .header-section.large .title {
-        font-size: 5rem;
-    }
     .col-4 {
         flex-basis: 50%;
     }
     .header-section.large .title {
         font-size: 5rem;
+    }
+    .wellcome .padding-left {
+        padding-left: 15px;
+    }
+    .blog .col-4 {
+        flex-basis: 33.33%;
+    }
+    .section-contact .col-7,
+    .section-contact .col-5,
+    .section-contact .col-10 {
+        flex-basis: 100%
+    }
+    .section-contact .container {
+        max-width: 540px;
+    }
+    .section-contact .margin-left {
+        margin-left: 0;
+        padding-left: 0px;
+    }
+    .section-contact .right {
+        margin-top: 50px;
+    }
+    .section-contact {
+        margin-top: 80px;
+        margin-bottom: 100px;
     }
 }
 
@@ -29,21 +51,81 @@
     .col-6 {
         flex-basis: 100%;
     }
+    .gallery .col-6 {
+        flex-basis: 50%
+    }
+    .blog .col-8 {
+        flex-basis: 100%
+    }
+    .blog .col-4 {
+        flex-basis: 100%
+    }
+    .section-contact .col-5 {
+        flex-basis: 41.66%;
+    }
     .blog::before {
         left: 0;
         transform: rotate(0deg);
         width: 100%;
     }
+    .wellcome .padding-left {
+        padding-left: 15px;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 6rem;
+    }
+    .family-room .col-nopading {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .family-room {
+        margin-bottom: 25px;
+    }
+    .family-room .r-flex {
+        flex-direction: column-reverse;
+    }
+    .family-room .half-text {
+        padding: 20px 7%;
+    }
+    .gallery {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .news-section .container {
+        max-width: 640px;
+    }
 }
 
-@media (max-width:800px) {}
-
 @media (max-width: 600px) {
+    .container {
+        max-width: 540px;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    .header-section.large .title {
+        font-size: 4rem;
+    }
     .col-3 {
         flex-basis: 100%;
     }
     .col-4 {
         flex-basis: 100%;
     }
-    ` .hero-section .button {}
+    .hero-section .hero-content p {
+        font-size: 1.8rem;
+    }
+    .header-section .description {
+        font-size: 1.8rem;
+    }
+    .wellcome .padding-left {
+        padding-left: 15px;
+    }
+    .hero-section .button {
+        display: block;
+        margin-top: 50px;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 4rem;
+    }
 }
